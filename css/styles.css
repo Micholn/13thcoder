@@ -1,0 +1,269 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-repeat: no-repeat;
+    background-position: top right, bottom left;
+    background-size: 100%; 
+    height: calc(70vh - 30px); */
+}
+
+ul {
+    background: white;
+    padding-top: 3%;
+    list-style-type: none;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    justify-content: center;
+    z-index: 1;
+}
+
+ul li {
+    display: inline-block ;
+    text-align: 
+}
+
+ul li a {
+    color: rgb(19, 18, 18);
+    font-weight: 900;
+    list-style: none;
+    display: inline;
+    font-weight: bolder;
+    font-size: 17px;
+    text-decoration: none;
+    font-family: Stencil Std, fantasy;
+    opacity: 5.1;
+    width: ;
+    border-radius: 6px;
+    padding: 2px 2px 2px 2px;
+    transform: translate(-50%,-50%);
+    transition: 2s;
+    margin: 2px 2px 2px 2px;
+}
+
+ul a:hover{
+  background-color: Red;
+  transition: 2s;
+} 
+
+
+/* .with{
+
+    display: flex;
+    margin-top: 10px;
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: center;
+    width: 60%;} */
+
+h1 {
+    color: white;
+    font-family: Stencil Std, fantasy;
+    padding-top: 2%; padding-bottom: 2%;
+    letter-spacing: 2px;
+}
+
+h3{
+  color: white;
+   font-family: Stencil Std, fantasy;
+    padding-top: 2%; padding-bottom: 2%;
+    letter-spacing: 2px;
+}
+
+p {
+    color: white;
+}
+
+/* images section */
+
+.Wn {
+    background-color: powderblue;
+    width: 150px; 
+    height: 150px;
+}
+
+.circular {
+    border-radius: 100%;
+    width: 150px; 
+    height: 150px;
+}
+
+/* micholn section */
+.book {
+    background-color: grey;
+    width: 85%;
+    height: 30%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    margin-top: 60%;
+    background-image: url(images/grunge.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 3%;
+    border: 5px solid;
+    padding: 1%;
+    /* border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 5%; */
+    box-sizing: border-box;
+    overflow: hidden; 
+
+
+}
+
+.pint {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    float: right;}
+
+.item{
+    padding: 0px 5px;
+}
+
+
+
+
+
+
+#technologies{
+  text-align: center;
+  background-image: url(images/abs.jpg);
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.carousel-item{
+  padding: 7% 15%;
+}
+
+.pulse{
+  border-radius: 50%; width: 5em;
+  height: 5em;
+  background: cornflowerblue;
+  align-items: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  box-sizing: border-box;
+}
+
+.pulse::after{
+  content: ''; position: absolute;
+  width: 5em; height: 5em;
+  z-index: 1; border-radius: 50%;
+  background: cornflowerblue;
+  animation: pulse 1s ease infinite;
+}
+@keyframes pulse {
+  from { transform: scale(1); opacity: 1; }
+  to { transform: scale(2); opacity: 0;}
+}
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+
+.social{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppings', sans-serif;
+    background: grey;
+    margin-left: ;
+    margin-right: ;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+
+.wrapper .button{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  float: center;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover{
+  width: 200px;
+}
+.wrapper .button .icon{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1):hover .icon{
+  background: #4267B2;
+}
+.wrapper .button:nth-child(2):hover .icon{
+  background: #1DA1F2;
+}
+.wrapper .button:nth-child(3):hover .icon{
+  background: #E1306C;
+}
+.wrapper .button:nth-child(4):hover .icon{
+  background: #333;
+}
+.wrapper .button:nth-child(5):hover .icon{
+  background: #0072b1;
+}
+.wrapper .button .icon i{
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i{
+  color: #fff;
+}
+.wrapper .button span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1) span{
+  color: #4267B2;
+}
+.wrapper .button:nth-child(2) span{
+  color: #1DA1F2;
+}
+.wrapper .button:nth-child(3) span{
+  color: #E1306C;
+}
+.wrapper .button:nth-child(4) span{
+  color: #333;
+}
+.wrapper .button:nth-child(5) span{
+  color: #ff0000;
+}
